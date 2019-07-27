@@ -88,7 +88,6 @@ Bisa dijalankan dionlline Editor, Terminal, Aplikasi atau program khusus tertent
 #### Cara 2.
 - Buka folder dengan terminal atau klick kanan 
     > pilih **Open in terminal** pada folder yang terdapat file *3_cetak_gambar.cpp*
-- Ketikan **3_cetak_gambar.cpp**
 - ketikan diterminal (untuk mengkompile file agar bisa dijalankan). 
     > g++ 3_cetak_gambar.cpp -o ./filehasilcompile
     - Tunggu proses compile selesai.
@@ -111,7 +110,6 @@ Bisa dijalankan dionlline Editor, Terminal, Aplikasi atau program khusus tertent
 #### Cara 2.
 - Buka folder dengan terminal atau klick kanan 
     > pilih **Open in terminal** pada folder yang terdapat file *4_vowel.cpp*
-- Ketikan **4_vowel.cpp**
 - ketikan diterminal (untuk mengkompile file agar bisa dijalankan). 
     > g++ 4_vowel.cpp -o ./filehasilcompile
     - Tunggu proses compile selesai.
