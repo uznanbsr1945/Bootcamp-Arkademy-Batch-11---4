@@ -35,25 +35,22 @@ Regex biasa digunakan untuk validasi form.
 
 **USERNAME**
 
-`var usernameREGEX = /^[a-zA-Z]*(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?!.*[\W\s_]+).{5,9}$/;`
+`var usernameREGEX = /^[A-Za-z]{1}[A-Za-z0-9]{4,8}$/;`
 ```java
-- /^[a-zA-Z]*   = Hanya Karakter Huruf besar & kecil yang diperbolehkan.
-- (?=.+[A-Z])   = Harus terdapat Huruf Besar.
-- (?=.+[a-z])   = Harus terdapat Huruf kecil.
-- (?=.+[0-9])   = Harus terdapat Nomer.
-- (?!.*[\W\s_]+).   = Tidak boleh terdapat spesial karakter.
-- {5,9}$         = Terdiri dari 5-9 digit.
+- /^[a-zA-Z]{1} = Hanya Karakter Huruf besar & kecil yang diperbolehkan diawal.(1 digit)
+- [A-Za-z0-9]   = Harus terdiri Huruf Besar,kecil dan angka.
+- {4,8}$        = Terdiri dari 5-9 digit.(ditambah digit awal)
 ```
 
 
 **PASSWORD** 
 
-`var passwordREGEX = /^(?=.*[A-Za-z])(?=.*[\d])(?=.*[=])(?=.*[#|?|@|!|$|%|^|&|*|-|_]).{8,}$/;`
+`var passwordREGEX = /^(?=.*[A-Za-z])(?=.+[\d]+)(?=.*[=]+)(?=.*[#|?|@|!|$|%|^|&|*|-|_|=]+).{8,}$/;`
 ```java
 - /^(?=.*[A-Za-z])  = Harus terdiri minimal masing-masing 1 kombinasi.(huruf kecil dan besar)
 - (?=.*[\d])        = Harus terdiri minimal dari 1 digit angka.
 - (?=.*[=])         = Harus terdiri minimal dari 1 simbol `=`.
-- (?=.*[#|?|@|!|$|%|^|&|*|-|_]) = Harus terdiri minimal dari 1 karakter karakter spesial.
+- (?=.*[#|?|@|!|$|%|^|&|*|-|_|=]) = Harus terdiri minimal dari 1 karakter karakter spesial.
 - .                 = Karakter sesuai ketentuan yang sudah ditulis sebelumnya.
 - {8,}$/;           = Harus terdiri minimal dari 8 karakter atau lebih.
 ```
@@ -69,7 +66,12 @@ Biasanya digunakan dalam sebuah function, tapi disini saya akan menjalankannaya 
 - Copy dan Paste-kan REGEX & input sesuai syarat karakternya.
 - Bila dipojok kanan bertuliskan no match, berarti karakter belum memenuhi syarat regex
 
-## 3.belahstring.cpp
+#### Cara 2. 
+- Buka folder dengan terminal atau klick kanan 
+    > pilih **Open in terminal** pada folder yang terdapat file *2_regex.php*
+- Ketikan **php 2_regex.php**
+
+## 3_cetak_gambar.cpp
 #### Penjelasan program: 
 Program ini terbuat dari bahasa pemrogramman C++, 
 
@@ -84,26 +86,33 @@ Bisa dijalankan dionlline Editor, Terminal, Aplikasi atau program khusus tertent
 - Copy pastekan Code yang ada didalam file c++
 
 #### Cara 2.
-- Buka Terminal dan masuk ke direktory file c++ berada.
+- Buka folder dengan terminal atau klick kanan 
+    > pilih **Open in terminal** pada folder yang terdapat file *3_cetak_gambar.cpp*
+- Ketikan **3_cetak_gambar.cpp**
 - ketikan diterminal (untuk mengkompile file agar bisa dijalankan). 
-    > g++ .belahstring.cpp -o ./filehasilcompile
-    - Tunggu proses compileselesai.
+    > g++ 3_cetak_gambar.cpp -o ./filehasilcompile
+    - Tunggu proses compile selesai.
     > ketikan ./filehasilcompile
 
-## 2.Regex.js
+## 4_vowel.cpp
 #### Penjelasan program: 
-#### Program yang dibutuhkan :
-#### Cara menjalankan :
-#### Cara 1. 
+Program ini terbuat dari bahasa pemrogramman C++, 
 
-## 2.Regex.js
-#### Penjelasan program: 
 #### Program yang dibutuhkan :
+1. Browser (misal, Mozilla Firefox)
+2. Terminal
 #### Cara menjalankan :
-#### Cara 1. 
+Bisa dijalankan dionlline Editor, Terminal, Aplikasi atau program khusus tertentu.
 
-## 2.Regex.js
-#### Penjelasan program: 
-#### Program yang dibutuhkan :
-#### Cara menjalankan :
 #### Cara 1. 
+- Buka browser dan open link [Online Editor](https://www.onlinegdb.com/).
+- Copy pastekan Code yang ada didalam file c++
+
+#### Cara 2.
+- Buka folder dengan terminal atau klick kanan 
+    > pilih **Open in terminal** pada folder yang terdapat file *4_vowel.cpp*
+- Ketikan **4_vowel.cpp**
+- ketikan diterminal (untuk mengkompile file agar bisa dijalankan). 
+    > g++ 4_vowel.cpp -o ./filehasilcompile
+    - Tunggu proses compile selesai.
+    > ketikan ./filehasilcompile
